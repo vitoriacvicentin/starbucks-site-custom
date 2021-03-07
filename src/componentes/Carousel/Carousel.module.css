@@ -1,0 +1,16 @@
+.aws{
+
+  --slider-height-percentage: 40%;
+  --slider-transition-duration: 700ms;
+  --organic-arrow-thickness: 4px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 40px;
+  --organic-arrow-color: #006341;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #000000;
+  --control-bullet-active-color: #006341;
+  --loader-bar-color: #006341;
+  --loader-bar-height: 6px;
+  }

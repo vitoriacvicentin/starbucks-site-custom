@@ -10,7 +10,6 @@ export const Container = styled.header`
     align-items: center;
     justify-content: center;
     height: 100%;
-    z-index: 1;
   }
 `;
 export const MenuButton = styled.div`
@@ -24,6 +23,7 @@ export const MenuButton = styled.div`
   top: 0;
   right: 0;
   color: white;
+  z-index:4;
   @media screen and (min-width: 785px) {
     display: none;
   }
@@ -53,6 +53,8 @@ export const Menu = styled.nav<MenuProps>`
     overflow: hidden;
     transition: all 1sec ease;
     overflow: scroll;
+    z-index: 3;
+    
   }
 `;
 
