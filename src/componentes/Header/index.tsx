@@ -2,7 +2,9 @@ import { Container, Menu, MenuButton, MenuItem } from "./styles";
 import Link from "next/link";
 import { FaBars } from 'react-icons/fa'
 import { useState } from 'react'
-
+/* 
+  Header do site
+*/
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
