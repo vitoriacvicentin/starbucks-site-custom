@@ -1,4 +1,6 @@
-import Header from "../componentes/Header";
+
+import Header from "@src/componentes/Header";
+
 
 import { MainContent, MainText, Section } from "../styles/pages/Home";
 const Home = () => {
@@ -8,14 +10,6 @@ const Home = () => {
       <Section>
         <MainContent>
           <MainText>OLÁ</MainText>
-          <MainText>OLÁ</MainText>
-          <MainText>OLÁ</MainText>
-          <MainText>OLÁ</MainText>
-          <MainText>OLÁ</MainText>
-          <MainText>OLÁ</MainText>
-          <MainText>OLÁ</MainText>
-          <MainText>OLÁ</MainText>
-          
         </MainContent>
       </Section>
     </>
