@@ -1,14 +1,25 @@
+import Header from "../componentes/Header";
 
-import Navigation from '../componentes/navigation';
-
+import { MainContent, MainText, Section } from "../styles/pages/Home";
 const Home = () => {
   return (
     <>
-      <Navigation />
+      <Header />
+      <Section>
+        <MainContent>
+          <MainText>OLÁ</MainText>
+          <MainText>OLÁ</MainText>
+          <MainText>OLÁ</MainText>
+          <MainText>OLÁ</MainText>
+          <MainText>OLÁ</MainText>
+          <MainText>OLÁ</MainText>
+          <MainText>OLÁ</MainText>
+          <MainText>OLÁ</MainText>
+          
+        </MainContent>
+      </Section>
     </>
-  )
-}
-
-
+  );
+};
 
 export default Home;
