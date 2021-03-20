@@ -1,6 +1,7 @@
 {
   "name": "apple-site-custom",
   "version": "1.0.0",
+  "author": "Vitoria Vicentin",
   "scripts": {
     "dev": "next dev",
     "dev-inspect": "NODE_OPTIONS='--inspect' next dev",
