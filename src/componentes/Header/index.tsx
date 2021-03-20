@@ -1,11 +1,12 @@
 import { Container, Menu, MenuButton, MenuItem } from "./styles";
 import Link from "next/link";
-import { FaBars } from 'react-icons/fa'
-import { useState } from 'react'
+import { FaBars } from "react-icons/fa";
+import { useState } from "react";
 /* 
   Header do site
 */
-export default function Header() {
+export const Header = () => {
+  /* Verifica se é mobile, caso for assume menu mobile */
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -14,7 +15,7 @@ export default function Header() {
         <Link href={"/"}>
           <MenuItem>Home</MenuItem>
         </Link>
-        <Link href={"/"}>
+        <Link href={"/flavors"}>
           <MenuItem>Sabores</MenuItem>
         </Link>
         <Link href={"/"}>
@@ -22,8 +23,9 @@ export default function Header() {
         </Link>
       </Menu>
       <MenuButton onClick={() => setIsOpen(!isOpen)}>
-        <FaBars size={20} color={isOpen ? "black" :"green"} />
+        <FaBars size={20} color={isOpen ? "black" : "green"} />
       </MenuButton>
     </Container>
   );
-}
+};
+export default Header;

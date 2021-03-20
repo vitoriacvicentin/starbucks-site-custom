@@ -1,10 +1,14 @@
 import styled from "styled-components";
-
+/* Container do Header (Menu) */
 export const Container = styled.header`
   height: 3rem;
   overflow: hidden;
-  background: linear-gradient(0deg, rgba(0,99,65,1) 0%, rgba(5,153,102,1) 100%);
-
+  background: linear-gradient(
+    0deg,
+    rgba(0, 99, 65, 1) 0%,
+    rgba(5, 153, 102, 1) 100%
+  );
+  /* Estilo do menu Mobile */
   @media screen and (max-width: 785px) {
     display: flex;
     align-items: center;
@@ -12,6 +16,7 @@ export const Container = styled.header`
     height: 100%;
   }
 `;
+/* Botão do menu Mobile */
 export const MenuButton = styled.div`
   margin-top: 20px;
   padding: 10px;
@@ -23,7 +28,7 @@ export const MenuButton = styled.div`
   top: 0;
   right: 0;
   color: white;
-  z-index:4;
+  z-index: 4;
   @media screen and (min-width: 785px) {
     display: none;
   }
@@ -45,7 +50,11 @@ export const Menu = styled.nav<MenuProps>`
     height: ${(props) => (props.isOpen ? "100%" : "0")};
     flex-direction: column;
     gap: 20px;
-    background: linear-gradient(0deg, rgba(0,99,65,1) 0%, rgba(5,153,102,1) 100%);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 99, 65, 1) 0%,
+      rgba(5, 153, 102, 1) 100%
+    );
     justify-content: center;
     width: 100vw;
     position: fixed;
@@ -54,10 +63,9 @@ export const Menu = styled.nav<MenuProps>`
     transition: all 1sec ease;
     overflow: scroll;
     z-index: 3;
-    
   }
 `;
-
+/* Titulos dos menus */
 export const MenuItem = styled.span`
   text-transform: capitalize;
   font-size: 1rem;

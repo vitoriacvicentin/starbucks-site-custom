@@ -1,5 +1,5 @@
-.aws{
-
+/* Aws propriedade customizada do carousel para melhor atender a pagina */
+.aws {
   --slider-height-percentage: 40%;
   --slider-transition-duration: 700ms;
   --organic-arrow-thickness: 4px;
@@ -13,4 +13,4 @@
   --control-bullet-active-color: #006341;
   --loader-bar-color: #006341;
   --loader-bar-height: 6px;
-  }
+}

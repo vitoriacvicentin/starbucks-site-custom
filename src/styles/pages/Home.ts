@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+/* Container da pagina inicial */
 export const MainContent = styled.div`
   display: flex;
   flex-direction: column;

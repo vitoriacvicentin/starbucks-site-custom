@@ -1,6 +1,6 @@
-import Example from "@src/componentes/Carousel";
+import Carousel from "@src/componentes/Carousel";
 import Header from "@src/componentes/Header";
-import { MainContent} from "../styles/pages/Home";
+import { MainContent } from "../styles/pages/Home";
 /* 
   Pagina Inicial
 */
@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Header />
       <MainContent>
-        <Example />
+        <Carousel />
       </MainContent>
     </>
   );
