@@ -112,7 +112,7 @@ export const LogoArea = styled.div`
   @media screen and (max-width: 785px) {
     width: 100%;
     padding: 0 20px;
-    margin-top: 4rem;
+    margin-top: 4px;
     margin-left:0;
     img {
       display: block;
