@@ -13,12 +13,12 @@ export const Header = () => {
 
   return (
     <Container>
-      <LogoArea>
-        <Link href={"/"}>
-          <Image width={40} height={40} src={logo} />
-        </Link>
-      </LogoArea>
       <Menu isOpen={isOpen}>
+        <LogoArea>
+          <Link href={"/"}>
+            <Image width={40} height={40} src={logo} />
+          </Link>
+        </LogoArea>
         <Link href={"/"}>
           <MenuItem>Home</MenuItem>
         </Link>

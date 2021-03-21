@@ -106,14 +106,11 @@ export const BrandLogo = styled.img`
 export const LogoArea = styled.div`
   display: block;
   align-items: flex-start;
-  margin-top: 4px;
-  position: absolute;
-  margin-left:1rem;
+  margin-top:4px;
   @media screen and (max-width: 785px) {
     width: 100%;
+    margin-top:1rem;
     padding: 0 20px;
-    margin-top: 4px;
-    margin-left:0;
     img {
       display: block;
     }
