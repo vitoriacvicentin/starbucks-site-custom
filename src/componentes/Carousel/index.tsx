@@ -10,9 +10,9 @@ Carossel com a biblioteca awasome slider,foi usado o css module para o style
 export const Carousel = () => {
   return (
     <AwesomeSlider className={styles.aws} mobileTouch={true}>
-      <div data-src={image1} />
-      <div data-src={image2} />
-      <div data-src={image3} />
+      <div data-src={image1} data-alt="Bem vindo ao site"/>
+      <div data-src={image2} data-alt="Uma loja da starbucks"/>
+      <div data-src={image3} data-alt="Copo da starbucks"/>
     </AwesomeSlider>
   );
 };

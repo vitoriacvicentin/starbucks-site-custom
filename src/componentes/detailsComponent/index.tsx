@@ -67,7 +67,7 @@ export const Details = () => {
             <ul key={id}>
               <Container>
                 <div>
-                  <Image src={details.image} width={400} height={400} />
+                  <Image src={details.image} width={400} height={400} alt="Um copo e capsula do starbucks"/>
                 </div>
                 <div className="div-right">
                   <h1>{title}</h1>

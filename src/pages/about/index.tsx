@@ -12,7 +12,7 @@ export const About = () => {
         <title>Sobre</title>
       </NextHead>
       <Container>
-        <Image src={starbucksabout} width={560} height={460} />
+        <Image src={starbucksabout} width={560} height={460} alt="Simbolo da starbucks" />
         <div className="div-right">
           <h1>A Starbucks</h1>
           <p>Espere mais do que simplesmente café</p>

@@ -6,6 +6,7 @@ import expresso from "@assets/expresso.png";
 import lattemacchiato from "@assets/lattemacchiato.png";
 import Link from "next/link";
 import { Card } from "react-bootstrap";
+import { FaSignLanguage } from "react-icons/fa";
 import { Button, Container } from "./styles";
 /* Componente de card, o array favlors amarzena os sabores de café para mapear
     e passar para o card de acordo com seu ID
@@ -34,8 +35,9 @@ export const CardFlavors = () => {
               <Link
                 href={{
                   pathname: "/details",
-                  query: { id: slug.id, name:slug.name },
+                  query: { id: slug.id, name: slug.name },
                 }}
+                as={slug?.name}
               >
                 <Button>Detalhes</Button>
               </Link>
