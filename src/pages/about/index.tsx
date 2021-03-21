@@ -1,12 +1,16 @@
 import { Container } from "@styles/pages/About";
 import starbucksabout from "@assets/starbucksabout.png";
 import Image from "next/image";
+import NextHead from "next/head";
 /* 
   Pagina Inicial
 */
 export const About = () => {
   return (
     <>
+      <NextHead>
+        <title>Sobre</title>
+      </NextHead>
       <Container>
         <Image src={starbucksabout} width={560} height={460} />
         <div className="div-right">

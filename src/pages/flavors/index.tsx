@@ -1,9 +1,12 @@
 import CardFlavors from "@src/componentes/cardFlavors";
-import Header from "@src/componentes/Header";
+import NextHead from "next/head";
 /* Pagina do sabores */
 export const Flavors = () => {
   return (
     <>
+      <NextHead>
+        <title>Sabores</title>
+      </NextHead>
       <CardFlavors />
     </>
   );

@@ -5,6 +5,7 @@ import caramelmacchiatodetails from "@assets/caramelmacchiatodetails.png";
 import expressodetails from "@assets/expressodetails.png";
 import lattemacchiatodetails from "@assets/lattemacchiatodetails.png";
 import Image from "next/image";
+import NextHead from "next/head";
 import { useRouter } from "next/router";
 import { Container } from "./styles";
 
@@ -54,6 +55,9 @@ export const Details = () => {
 
   return (
     <>
+      <NextHead>
+        <title>{title}</title>
+      </NextHead>
       {newflavorsdetails.map((details) => (
         <div>
           {details.id == id && (
