@@ -9,6 +9,8 @@ import NextHead from "next/head";
 import { useRouter } from "next/router";
 import { Container } from "./styles";
 
+/* Pagina de detalhes, array renderiza de acordo com a rota */
+
 const flavorsdetails = [
   {
     id: 1,
@@ -48,6 +50,7 @@ const flavorsdetails = [
   },
 ];
 export const Details = () => {
+  /* Hooks das rotas */
   const router = useRouter();
   const id = router.query.id;
   const title = router.query.name;
