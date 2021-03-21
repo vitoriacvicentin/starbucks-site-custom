@@ -9,8 +9,8 @@ export const Container = styled.div`
   margin-left: 1rem;
   margin-right: 1rem;
   .div-right {
-    margin-left: 1rem;
-    width: 55%;
+    margin-left: 4rem;
+    width: 45%;
     text-align: center;
     border-radius: 1%;
     h1 {
