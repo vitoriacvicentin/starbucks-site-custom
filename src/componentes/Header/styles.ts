@@ -8,7 +8,7 @@ export const Container = styled.header`
     rgba(0, 99, 65, 1) 0%,
     rgba(5, 153, 102, 1) 100%
   );
-  /* Estilo do menu Mobile */
+  /* Estilo do container Mobile */
   @media screen and (max-width: 785px) {
     display: flex;
     align-items: center;
@@ -44,25 +44,19 @@ export const Menu = styled.nav<MenuProps>`
   flex-grow: 1;
   justify-content: space-evenly;
   transition: height 0.3s ease;
-
+  /* Estilo do menu Mobile */
   @media screen and (max-width: 785px) {
     /* CSS */
     height: ${(props) => (props.isOpen ? "100%" : "0")};
-    flex-direction: column;
-    gap: 20px;
     background: linear-gradient(
       0deg,
       rgba(0, 99, 65, 1) 0%,
       rgba(5, 153, 102, 1) 100%
     );
-    justify-content: center;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-    transition: all 1sec ease;
-    overflow: scroll;
-    z-index: 3;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    ${(props) => props.isOpen && "height: fit-content; padding-bottom:20px;"}
   }
 `;
 /* Titulos dos menus */

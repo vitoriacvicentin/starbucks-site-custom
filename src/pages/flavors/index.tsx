@@ -4,7 +4,6 @@ import Header from "@src/componentes/Header";
 export const Flavors = () => {
   return (
     <>
-      <Header />
       <CardFlavors />
     </>
   );
