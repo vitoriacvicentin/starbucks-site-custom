@@ -93,3 +93,29 @@ export const MenuItem = styled.span`
     }
   }
 `;
+export const BrandLogo = styled.img`
+  height: 4rem;
+  width: auto;
+  cursor: pointer;
+
+  @media (max-width: 785px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+`;
+export const LogoArea = styled.div`
+  display: block;
+  align-items: flex-start;
+  margin-top: 4px;
+  position: absolute;
+  margin-left:1rem;
+  @media screen and (max-width: 785px) {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 4rem;
+    margin-left:0;
+    img {
+      display: block;
+    }
+  }
+`;

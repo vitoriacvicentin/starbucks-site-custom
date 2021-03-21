@@ -1,7 +1,9 @@
-import { Container, Menu, MenuButton, MenuItem } from "./styles";
+import { Container, LogoArea, Menu, MenuButton, MenuItem } from "./styles";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import Image from "next/image";
+import logo from "@assets/starbucksabout.png";
 /* 
   Header do site
 */
@@ -11,6 +13,11 @@ export const Header = () => {
 
   return (
     <Container>
+      <LogoArea>
+        <Link href={"/"}>
+          <Image width={40} height={40} src={logo} />
+        </Link>
+      </LogoArea>
       <Menu isOpen={isOpen}>
         <Link href={"/"}>
           <MenuItem>Home</MenuItem>
