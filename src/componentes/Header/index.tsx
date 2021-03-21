@@ -18,7 +18,7 @@ export const Header = () => {
         <Link href={"/flavors"}>
           <MenuItem>Sabores</MenuItem>
         </Link>
-        <Link href={"/"}>
+        <Link href={"/about"}>
           <MenuItem>Sobre</MenuItem>
         </Link>
       </Menu>
