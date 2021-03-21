@@ -1,7 +1,7 @@
-# Starbucks site in development
+# Starbucks site custom
 
 This is a site inpired in starbucks, with react, next js and css.
-
+See in : https://starbucks-site-custom.vercel.app/
 ## Installation
 
 Installation Commands:
