@@ -1,4 +1,5 @@
 import Details from "@src/componentes/detailsComponent";
+import { motion } from "framer-motion";
 import NextHead from "next/head";
 /* 
   Pagina Inicial
@@ -6,10 +7,17 @@ import NextHead from "next/head";
 const Home = () => {
   return (
     <>
-      <NextHead>
-        <title>Detalhes</title>
-      </NextHead>
-      <Details />
+      <motion.div
+        exit={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <NextHead>
+          <title>Detalhes</title>
+        </NextHead>
+        <Details />
+      </motion.div>
     </>
   );
 };
